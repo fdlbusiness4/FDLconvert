@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FDL Convert - Jasa Convert Saldo Aman & Cepat</title>
+<title>FDL Convert - Jasa Convert Saldo</title>
+
 <style>
 body {
     margin:0;
@@ -11,10 +12,10 @@ body {
     background:#f4f6f9;
 }
 header {
-    background:#0d47a1;
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
     color:white;
     text-align:center;
-    padding:40px 20px;
+    padding:50px 20px;
 }
 h1 { margin:0; }
 section {
@@ -27,7 +28,7 @@ section {
     padding:20px;
     margin-bottom:20px;
     border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 .button {
     display:inline-block;
@@ -35,6 +36,86 @@ section {
     background:#25D366;
     color:white;
     text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+input {
+    padding:10px;
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+footer {
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+
+<script>
+function hitung() {
+    var nominal = document.getElementById("nominal").value;
+    var fee = 5; // GANTI FEE DI SINI (%)
+    var potongan = nominal * fee / 100;
+    var hasil = nominal - potongan;
+    document.getElementById("hasil").innerHTML =
+        "Potongan: Rp " + potongan.toLocaleString() +
+        "<br>Diterima: Rp " + hasil.toLocaleString();
+}
+</script>
+
+</head>
+<body>
+
+<header>
+    <h1>FDL Convert</h1>
+    <p>Jasa Convert Saldo Aman & Cepat</p>
+    <br>
+    <a class="button" href="https://wa.me/628XXXXXXXXXX">Order via WhatsApp</a>
+</header>
+
+<section>
+
+<div class="card">
+<h2>💳 Layanan</h2>
+<ul>
+<li>Convert E-Wallet ke Rekening</li>
+<li>Convert Saldo Marketplace</li>
+<li>Transfer Antar Wallet</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>💰 Kalkulator Fee (5%)</h2>
+<input type="number" id="nominal" placeholder="Masukkan nominal">
+<button onclick="hitung()">Hitung</button>
+<p id="hasil"></p>
+</div>
+
+<div class="card">
+<h2>📌 Cara Order</h2>
+<ol>
+<li>Chat admin via WhatsApp</li>
+<li>Kirim detail saldo</li>
+<li>Transfer sesuai instruksi</li>
+<li>Dana dikirim ke rekening tujuan</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>⚠️ Ketentuan</h2>
+<p>Kami tidak menerima transaksi yang melanggar hukum atau berasal dari aktivitas ilegal.</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 FDL Convert
+</footer>
+
+</body>
+</html>    text-decoration:none;
     border-radius:8px;
     font-weight:bold;
 }
