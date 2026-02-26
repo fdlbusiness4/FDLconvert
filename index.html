@@ -1,118 +1,81 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FDL Convert - Jasa Convert Saldo</title>
-
-<style>
-body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f4f6f9;
-}
-header {
-    background:linear-gradient(135deg,#0d47a1,#1976d2);
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
-h1 { margin:0; }
-section {
-    padding:30px 20px;
-    max-width:900px;
-    margin:auto;
-}
-.card {
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-.button {
-    display:inline-block;
-    padding:12px 20px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-input {
-    padding:10px;
-    width:100%;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-footer {
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-</style>
-
-<script>
-function hitung() {
-    var nominal = document.getElementById("nominal").value;
-    var fee = 5; // GANTI FEE DI SINI (%)
-    var potongan = nominal * fee / 100;
-    var hasil = nominal - potongan;
-    document.getElementById("hasil").innerHTML =
-        "Potongan: Rp " + potongan.toLocaleString() +
-        "<br>Diterima: Rp " + hasil.toLocaleString();
-}
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Convert E-Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            color: #333;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .note {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-    <h1>FDL Convert</h1>
-    <p>Jasa Convert Saldo Aman & Cepat</p>
-    <br>
-    <a class="button" href="https://wa.me/628XXXXXXXXXX">Order via WhatsApp</a>
-</header>
+<p>
+Halaman yang kamu kirim (<strong>https://yudistira.net/jasa-convert-ewallet/</strong>) 
+adalah sebuah <strong>layanan “jasa convert e-wallet”</strong> dari situs 
+<em>YUDISTIRA.NET</em>, yaitu layanan untuk membantu pengguna menukarkan saldo dompet digital ke bentuk lain.
+</p>
 
-<section>
+<h2>📌 Apa itu Jasa Convert E-wallet?</h2>
+<p>
+<strong>Jasa convert e-wallet</strong> adalah layanan yang membantu pengguna 
+menukarkan atau mencairkan saldo e-wallet atau dompet digital ke bentuk lain — 
+misalnya dari saldo PayPal, e-wallet, atau mata uang digital — 
+menjadi saldo di dompet digital lain atau uang lokal seperti Rupiah (IDR).
+</p>
 
-<div class="card">
-<h2>💳 Layanan</h2>
+<h2>📍 Layanan yang Ditawarkan di YUDISTIRA.NET</h2>
+<p>Platform ini menyediakan beberapa layanan seperti:</p>
+
 <ul>
-<li>Convert E-Wallet ke Rekening</li>
-<li>Convert Saldo Marketplace</li>
-<li>Transfer Antar Wallet</li>
+    <li>🔄 <strong>Convert saldo e-wallet</strong>, misalnya:
+        <ul>
+            <li>PayPal</li>
+            <li>Skrill</li>
+            <li>Crypto</li>
+            <li>Dan dompet digital lainnya</li>
+        </ul>
+    </li>
+    <li>Menjadi:
+        <ul>
+            <li>Rupiah (IDR)</li>
+            <li>Saldo e-wallet lain seperti DANA, OVO, GoPay, ShopeePay, LinkAja</li>
+        </ul>
+    </li>
+    <li>💱 Proses disebut cepat, biasanya dalam hitungan menit</li>
+    <li>📈 Menggunakan sistem rate convert (nilai tukar yang ditentukan pihak jasa)</li>
 </ul>
-</div>
 
-<div class="card">
-<h2>💰 Kalkulator Fee (5%)</h2>
-<input type="number" id="nominal" placeholder="Masukkan nominal">
-<button onclick="hitung()">Hitung</button>
-<p id="hasil"></p>
-</div>
-
-<div class="card">
-<h2>📌 Cara Order</h2>
+<h2>🧾 Cara Kerja Umumnya</h2>
 <ol>
-<li>Chat admin via WhatsApp</li>
-<li>Kirim detail saldo</li>
-<li>Transfer sesuai instruksi</li>
-<li>Dana dikirim ke rekening tujuan</li>
+    <li>Menghubungi kontak (biasanya WhatsApp atau formulir yang tersedia).</li>
+    <li>Menyampaikan jumlah saldo yang ingin di-convert dan tujuan pencairan.</li>
+    <li>Mendapatkan informasi rate dan instruksi transaksi.</li>
+    <li>Setelah proses selesai dan dikonfirmasi, saldo dikirim ke akun tujuan.</li>
 </ol>
+
+<div class="note">
+<strong>⚠️ Catatan Penting:</strong><br>
+Layanan seperti ini biasanya dikelola oleh pihak ketiga dan bukan layanan resmi dari penyedia e-wallet seperti PayPal atau lainnya, 
+sehingga tetap perlu berhati-hati terhadap risiko penipuan dan perbedaan rate.
 </div>
-
-<div class="card">
-<h2>⚠️ Ketentuan</h2>
-<p>Kami tidak menerima transaksi yang melanggar hukum atau berasal dari aktivitas ilegal.</p>
-</div>
-
-</section>
-
-<footer>
-© 2026 FDL Convert
-</footer>
 
 </body>
 </html>
